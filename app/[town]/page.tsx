@@ -94,7 +94,7 @@ export default async function TownPage({ params }: PageProps) {
                 <h3 className="text-xl font-playfair font-semibold text-white group-hover:text-amber-400 transition-colors mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 text-sm">{service.description}</p>
+                <p className="text-gray-400 text-sm">{service.shortDesc}</p>
                 <div className="mt-4 text-amber-400 text-sm flex items-center">
                   Learn more
                   <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

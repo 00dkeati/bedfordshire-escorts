@@ -18,13 +18,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Page Not Found" };
   }
 
-  const title = `${type.title} in ${town.name} | Buckinghamshire Escorts`;
-  const description = `${type.description} Available now in ${town.name}, ${town.region}. Book your ${type.name.toLowerCase()} escort today.`;
+  const title = `${type.title} in ${town.name} | Buckinghamshire Escorts Agency`;
+  const description = `Looking for ${type.name.toLowerCase()} escorts in ${town.name}? ${type.shortDesc} Available for incall & outcall in ${town.region}. Book your ${town.name} ${type.name.toLowerCase()} escort today.`;
 
   return {
     title,
     description,
-    keywords: `${type.name.toLowerCase()} escorts ${town.name}, ${town.name} ${type.name.toLowerCase()} escorts, ${type.slug} escort ${town.name}, Buckinghamshire ${type.name.toLowerCase()} escorts`,
+    keywords: `${type.name.toLowerCase()} escorts ${town.name}, ${town.name} ${type.name.toLowerCase()} escorts, ${type.slug} escort ${town.name}, ${type.name.toLowerCase()} escort agency ${town.name}, best ${type.name.toLowerCase()} escorts ${town.region}, Buckinghamshire ${type.name.toLowerCase()} escorts, ${type.name.toLowerCase()} companions ${town.name}`,
     openGraph: {
       title,
       description,
@@ -67,21 +67,25 @@ export default async function TownTypePage({ params }: PageProps) {
   
   // Get related types for internal linking
   const relatedTypes = isService 
-    ? serviceTypes.filter(s => s.slug !== typeSlug).slice(0, 2)
-    : escortTypes.filter(e => e.slug !== typeSlug).slice(0, 4);
+    ? serviceTypes.filter(s => s.slug !== typeSlug)
+    : escortTypes.filter(e => e.slug !== typeSlug).slice(0, 6);
 
-  // Get nearby towns for internal linking
-  const nearbyTowns = towns
-    .filter(t => t.slug !== townSlug && t.region === town.region)
-    .slice(0, 4);
+  // Get nearby towns for internal linking (same region first)
+  const nearbyTowns = [
+    ...towns.filter(t => t.slug !== townSlug && t.region === town.region),
+    ...towns.filter(t => t.slug !== townSlug && t.region !== town.region).slice(0, 3)
+  ].slice(0, 6);
+
+  // All towns for this type
+  const allTownsForType = towns.filter(t => t.slug !== townSlug);
 
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-b from-black via-zinc-900 to-zinc-950">
+      <section className="py-20 bg-gradient-to-b from-black via-zinc-900 to-zinc-950">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="text-amber-400 text-sm uppercase tracking-wider mb-4">
-            {town.region}
+            {town.region} • Buckinghamshire
           </div>
           <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
             <span className="text-amber-400">{type.name}</span>
@@ -90,12 +94,13 @@ export default async function TownTypePage({ params }: PageProps) {
             <span className="text-white">{town.name}</span>
           </h1>
           <div className="divider-gold my-8"></div>
-          <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            {type.description} Book your perfect {type.name.toLowerCase()} companion in {town.name} today.
+          <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            {type.shortDesc} Discover our selection of {type.name.toLowerCase()} escorts available 
+            for bookings throughout {town.name} and the surrounding {town.region} area.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-gold">
-              Book Now
+              Book Your {type.name} Escort
             </Link>
             <Link href="/escorts" className="btn-outline">
               View All Escorts
@@ -107,180 +112,269 @@ export default async function TownTypePage({ params }: PageProps) {
       {/* Main Content */}
       <section className="py-16 section-dark">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Main Content */}
-            <div className="lg:col-span-2">
-              <div className="card-elegant mb-8">
-                <h2 className="text-2xl font-playfair font-semibold text-white mb-4">
-                  About {type.name} Escorts in {town.name}
+          <div className="grid lg:grid-cols-3 gap-10">
+            {/* Main Content - Left 2 Columns */}
+            <div className="lg:col-span-2 space-y-8">
+              
+              {/* Introduction */}
+              <article className="card-elegant">
+                <h2 className="text-2xl font-playfair font-semibold text-white mb-6">
+                  {type.title} in {town.name}, Buckinghamshire
                 </h2>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  {type.longDescription}
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  Our {type.name.toLowerCase()} escorts in {town.name} are carefully selected to ensure 
-                  the highest standards of companionship. Whether you&apos;re looking for a dinner date, 
-                  social event companion, or private encounter, our {town.name} {type.name.toLowerCase()} escorts 
-                  are ready to provide an unforgettable experience.
-                </p>
-              </div>
+                <div className="prose prose-lg text-gray-300 leading-relaxed space-y-4">
+                  <p>{type.intro}</p>
+                  {'paragraph1' in type && <p>{type.paragraph1}</p>}
+                  {'paragraph2' in type && <p>{type.paragraph2}</p>}
+                  {'paragraph3' in type && <p>{type.paragraph3}</p>}
+                </div>
+              </article>
 
-              {/* Features */}
-              <div className="card-elegant mb-8">
-                <h3 className="text-xl font-playfair font-semibold text-amber-400 mb-4">
-                  What to Expect
-                </h3>
-                <div className="grid sm:grid-cols-2 gap-4">
+              {/* Features Section */}
+              <article className="card-elegant">
+                <h2 className="text-2xl font-playfair font-semibold text-amber-400 mb-6">
+                  What to Expect from {type.name} Escorts in {town.name}
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-4 mb-6">
                   {type.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center space-x-3">
-                      <span className="text-amber-400">✓</span>
+                    <div key={idx} className="flex items-start space-x-3">
+                      <span className="text-amber-400 mt-1">✓</span>
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
                 </div>
-              </div>
+                
+                {'benefits' in type && (
+                  <>
+                    <h3 className="text-xl font-playfair font-semibold text-white mt-8 mb-4">
+                      Benefits of Choosing {type.name} Escorts
+                    </h3>
+                    <ul className="space-y-2">
+                      {type.benefits.map((benefit, idx) => (
+                        <li key={idx} className="flex items-start space-x-3">
+                          <span className="text-amber-400">•</span>
+                          <span className="text-gray-300">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </article>
 
-              {/* Service Process (if applicable) */}
+              {/* Service Process (for service types) */}
               {isService && serviceType && 'process' in serviceType && (
-                <div className="card-elegant mb-8">
-                  <h3 className="text-xl font-playfair font-semibold text-amber-400 mb-4">
-                    How {type.name} Works
-                  </h3>
-                  <div className="space-y-4">
+                <article className="card-elegant">
+                  <h2 className="text-2xl font-playfair font-semibold text-white mb-6">
+                    How to Book {type.name} Service in {town.name}
+                  </h2>
+                  <div className="space-y-6">
                     {(serviceType as typeof serviceTypes[0]).process.map((step, idx) => (
-                      <div key={idx} className="flex items-start space-x-4">
-                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 font-semibold">
+                      <div key={idx} className="flex items-start space-x-5">
+                        <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-lg">
                           {idx + 1}
                         </div>
-                        <p className="text-gray-300 pt-1">{step}</p>
+                        <div>
+                          <p className="text-gray-200 text-lg">{step}</p>
+                        </div>
                       </div>
                     ))}
                   </div>
-                </div>
+                  {'considerations' in serviceType && (
+                    <div className="mt-8 p-4 bg-zinc-800/50 rounded-lg border border-zinc-700">
+                      <h4 className="text-amber-400 font-semibold mb-2">Important Information</h4>
+                      <p className="text-gray-400 text-sm">{serviceType.considerations}</p>
+                    </div>
+                  )}
+                </article>
               )}
 
-              {/* Local SEO Content */}
-              <div className="card-elegant">
-                <h3 className="text-xl font-playfair font-semibold text-white mb-4">
-                  {type.name} Escort Services in {town.name}, Buckinghamshire
-                </h3>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  {town.name} is located in {town.region} and is one of the key areas we serve 
-                  with our premium {type.name.toLowerCase()} escort services. Whether you&apos;re a 
-                  local resident or visiting the area, our {type.name.toLowerCase()} companions 
-                  are available for both incall and outcall appointments.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  We pride ourselves on providing discreet, professional {type.name.toLowerCase()} escort 
-                  services throughout {town.name} and the surrounding {town.region} area. 
-                  Contact us today to arrange your booking with one of our stunning {type.name.toLowerCase()} escorts.
-                </p>
-              </div>
+              {/* Local Information */}
+              <article className="card-elegant">
+                <h2 className="text-2xl font-playfair font-semibold text-white mb-6">
+                  About {type.name} Escort Services in {town.name}
+                </h2>
+                <div className="prose text-gray-300 leading-relaxed space-y-4">
+                  <p>
+                    {town.name} is located in the heart of {town.region}, making it an ideal location for 
+                    {type.name.toLowerCase()} escort services in Buckinghamshire. {town.description}
+                  </p>
+                  <p>
+                    Our {type.name.toLowerCase()} escorts serving {town.name} are available for both incall 
+                    and outcall appointments. Whether you&apos;re a local resident, visiting for business, or 
+                    staying at one of the area&apos;s hotels such as {town.hotels}, our {type.name.toLowerCase()} companions 
+                    are ready to provide an exceptional experience.
+                  </p>
+                  <p>
+                    {town.name} offers plenty of opportunities for dining and entertainment, including {town.attractions}. 
+                    Our {type.name.toLowerCase()} escorts make wonderful companions for dinner dates at local restaurants, 
+                    private encounters at your accommodation, or any other arrangement that suits your preferences.
+                  </p>
+                  <p>
+                    With a population of {town.population}, {town.name} is {town.region === 'North Buckinghamshire' 
+                      ? 'one of the key towns in North Buckinghamshire' 
+                      : town.region === 'South Buckinghamshire'
+                      ? 'situated in the affluent South Buckinghamshire area'
+                      : 'nestled in the beautiful Chiltern District'}, offering easy access to surrounding areas. 
+                    Our {type.name.toLowerCase()} escorts can travel throughout the region or host you at discreet 
+                    incall locations.
+                  </p>
+                </div>
+              </article>
+
+              {/* Why Choose Us */}
+              <article className="card-elegant">
+                <h2 className="text-2xl font-playfair font-semibold text-amber-400 mb-6">
+                  Why Choose Our {type.name} Escorts in {town.name}?
+                </h2>
+                <div className="prose text-gray-300 leading-relaxed space-y-4">
+                  <p>
+                    At Buckinghamshire Escorts Agency, we pride ourselves on providing the highest quality 
+                    {type.name.toLowerCase()} escort services in {town.name} and throughout {town.region}. 
+                    Our selection process ensures that every {type.name.toLowerCase()} escort meets our 
+                    exacting standards for appearance, personality, and professionalism.
+                  </p>
+                  <p>
+                    When you book a {type.name.toLowerCase()} escort through us, you can expect complete 
+                    discretion, verified companions, and a service tailored to your specific requirements. 
+                    Whether you&apos;re seeking companionship for a special event, a dinner date in {town.name}, 
+                    or a private encounter, our {type.name.toLowerCase()} escorts deliver exceptional experiences.
+                  </p>
+                  <p>
+                    We understand that finding the right escort is important. That&apos;s why we offer a diverse 
+                    selection of {type.name.toLowerCase()} companions in {town.name}, each with her own unique 
+                    qualities and specialities. Contact us to discuss your preferences, and we&apos;ll recommend 
+                    the perfect {type.name.toLowerCase()} escort for your needs.
+                  </p>
+                </div>
+              </article>
             </div>
 
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              {/* Quick Contact */}
-              <div className="card-elegant mb-6">
-                <h3 className="text-lg font-playfair font-semibold text-white mb-4">
-                  Quick Booking
+            {/* Sidebar - Right Column */}
+            <aside className="lg:col-span-1 space-y-6">
+              {/* Quick Booking Card */}
+              <div className="card-elegant sticky top-24">
+                <h3 className="text-xl font-playfair font-semibold text-white mb-4">
+                  Book a {type.name} Escort
                 </h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  Ready to book a {type.name.toLowerCase()} escort in {town.name}? Contact us now.
+                <p className="text-gray-400 text-sm mb-6">
+                  Ready to meet a stunning {type.name.toLowerCase()} escort in {town.name}? 
+                  Contact us now to arrange your booking.
                 </p>
-                <Link href="/contact" className="btn-gold w-full text-center block">
-                  Contact Us
+                <Link href="/contact" className="btn-gold w-full text-center block mb-4">
+                  Contact Us Now
                 </Link>
+                <p className="text-gray-500 text-xs text-center">
+                  Available 24/7 • Complete Discretion
+                </p>
               </div>
 
-              {/* Related Types */}
-              <div className="card-elegant mb-6">
+              {/* Other Types in This Town */}
+              <div className="card-elegant">
                 <h3 className="text-lg font-playfair font-semibold text-amber-400 mb-4">
-                  Other {isService ? "Services" : "Types"} in {town.name}
+                  Other Escorts in {town.name}
                 </h3>
                 <ul className="space-y-2">
                   {relatedTypes.map((related) => (
                     <li key={related.slug}>
                       <Link
                         href={`/${townSlug}/${related.slug}`}
-                        className="text-gray-300 hover:text-amber-400 transition-colors text-sm flex items-center"
+                        className="text-gray-300 hover:text-amber-400 transition-colors text-sm flex items-center group"
                       >
-                        <span className="mr-2">→</span>
-                        {related.name} Escorts
+                        <span className="mr-2 text-amber-400/50 group-hover:text-amber-400">→</span>
+                        {related.title}
                       </Link>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Nearby Towns */}
-              {nearbyTowns.length > 0 && (
+              {/* This Type in Nearby Towns */}
+              <div className="card-elegant">
+                <h3 className="text-lg font-playfair font-semibold text-amber-400 mb-4">
+                  {type.name} Escorts Nearby
+                </h3>
+                <ul className="space-y-2">
+                  {nearbyTowns.map((nearbyTown) => (
+                    <li key={nearbyTown.slug}>
+                      <Link
+                        href={`/${nearbyTown.slug}/${typeSlug}`}
+                        className="text-gray-300 hover:text-amber-400 transition-colors text-sm flex items-center group"
+                      >
+                        <span className="mr-2 text-amber-400/50 group-hover:text-amber-400">→</span>
+                        {nearbyTown.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Services Quick Links */}
+              {!isService && (
                 <div className="card-elegant">
                   <h3 className="text-lg font-playfair font-semibold text-amber-400 mb-4">
-                    {type.name} Escorts Nearby
+                    Services in {town.name}
                   </h3>
                   <ul className="space-y-2">
-                    {nearbyTowns.map((nearbyTown) => (
-                      <li key={nearbyTown.slug}>
+                    {serviceTypes.map((service) => (
+                      <li key={service.slug}>
                         <Link
-                          href={`/${nearbyTown.slug}/${typeSlug}`}
-                          className="text-gray-300 hover:text-amber-400 transition-colors text-sm flex items-center"
+                          href={`/${townSlug}/${service.slug}`}
+                          className="text-gray-300 hover:text-amber-400 transition-colors text-sm flex items-center group"
                         >
-                          <span className="mr-2">→</span>
-                          {nearbyTown.name}
+                          <span className="mr-2 text-amber-400/50 group-hover:text-amber-400">→</span>
+                          {service.title}
                         </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               )}
-            </div>
+            </aside>
           </div>
         </div>
       </section>
 
-      {/* Browse More */}
+      {/* Browse All Towns for This Type */}
       <section className="py-16 section-gradient">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-playfair font-bold text-center text-white mb-8">
-            Browse All <span className="text-amber-400">{type.name} Escorts</span> in Buckinghamshire
+          <h2 className="text-3xl font-playfair font-bold text-center text-white mb-4">
+            {type.title} Across <span className="text-amber-400">Buckinghamshire</span>
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {towns.filter(t => t.slug !== townSlug).slice(0, 8).map((t) => (
+          <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+            Our {type.name.toLowerCase()} escorts are available throughout Buckinghamshire. 
+            Select another location to find {type.name.toLowerCase()} companions in your area.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {allTownsForType.map((t) => (
               <Link
                 key={t.slug}
                 href={`/${t.slug}/${typeSlug}`}
-                className="card-elegant text-center group py-4"
+                className="card-elegant text-center group py-3 px-2"
               >
-                <span className="text-white group-hover:text-amber-400 transition-colors font-medium">
+                <span className="text-white group-hover:text-amber-400 transition-colors text-sm font-medium">
                   {t.name}
                 </span>
               </Link>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Link href="/locations" className="text-amber-400 hover:text-amber-300">
-              View all locations →
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 section-dark">
+      {/* Final CTA */}
+      <section className="py-20 section-dark">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-playfair font-bold text-white mb-6">
-            Book Your <span className="text-amber-400">{type.name}</span> Escort in {town.name}
+          <h2 className="text-4xl font-playfair font-bold text-white mb-6">
+            Book Your <span className="text-amber-400">{type.name}</span> Escort in {town.name} Today
           </h2>
-          <p className="text-gray-400 mb-8">
-            Contact us today to arrange an unforgettable encounter with one of our 
-            stunning {type.name.toLowerCase()} escorts in {town.name}.
+          <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+            Don&apos;t wait – contact Buckinghamshire Escorts Agency now to arrange an unforgettable 
+            encounter with one of our stunning {type.name.toLowerCase()} escorts in {town.name}. 
+            Discretion guaranteed, satisfaction assured.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-gold">
+            <Link href="/contact" className="btn-gold text-lg px-10 py-4">
               Book Now
             </Link>
-            <Link href={`/locations/${townSlug}`} className="btn-outline">
+            <Link href={`/${townSlug}`} className="btn-outline text-lg px-10 py-4">
               All {town.name} Escorts
             </Link>
           </div>
@@ -294,8 +388,8 @@ export default async function TownTypePage({ params }: PageProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": `${type.name} Escorts in ${town.name}`,
-            "description": type.description,
+            "name": `${type.title} in ${town.name}`,
+            "description": `${type.shortDesc} Available in ${town.name}, ${town.region}, Buckinghamshire.`,
             "provider": {
               "@type": "Organization",
               "name": "Buckinghamshire Escorts Agency",
@@ -306,7 +400,11 @@ export default async function TownTypePage({ params }: PageProps) {
               "name": town.name,
               "containedInPlace": {
                 "@type": "AdministrativeArea",
-                "name": "Buckinghamshire"
+                "name": "Buckinghamshire",
+                "containedInPlace": {
+                  "@type": "Country",
+                  "name": "United Kingdom"
+                }
               }
             },
             "serviceType": `${type.name} Escort Service`
