@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "FAQ | Buckinghamshire Escorts Agency",
-  description: "Frequently asked questions about our Buckinghamshire escort services. Learn about booking, discretion, rates and more.",
+  title: "FAQ | Bedfordshire Escorts Agency",
+  description: "Frequently asked questions about our Bedfordshire escort services. Learn about booking, discretion, rates and more.",
 };
 
 const faqs = [
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "What areas do you cover?",
-    answer: "We cover all of Buckinghamshire including Milton Keynes, High Wycombe, Aylesbury, Amersham, Chesham, Beaconsfield, Marlow, and many more towns. We are an outcall-only agency – our escorts travel to you."
+    answer: "We cover all of Bedfordshire including Milton Keynes, High Wycombe, Aylesbury, Amersham, Chesham, Beaconsfield, Marlow, and many more towns. We are an outcall-only agency – our escorts travel to you."
   },
   {
     question: "What are your rates?",

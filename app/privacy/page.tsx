@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Buckinghamshire Escorts Agency",
-  description: "Privacy policy for Buckinghamshire Escorts Agency. Learn how we protect your personal information.",
+  title: "Privacy Policy | Bedfordshire Escorts Agency",
+  description: "Privacy policy for Bedfordshire Escorts Agency. Learn how we protect your personal information.",
 };
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
           <div className="card-elegant prose prose-invert max-w-none">
             <h2 className="text-amber-400">Your Privacy Matters</h2>
             <p>
-              At Buckinghamshire Escorts Agency, we take your privacy extremely seriously. 
+              At Bedfordshire Escorts Agency, we take your privacy extremely seriously. 
               This policy outlines how we collect, use, and protect your personal information.
             </p>
 
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
             <h3>Contact Us</h3>
             <p>
               For any privacy-related concerns, please contact us at 
-              info@buckinghamshireescorts.agency
+              info@bedfordshireescorts.agency
             </p>
 
             <p className="text-sm text-gray-500 mt-8">

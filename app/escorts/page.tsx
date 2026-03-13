@@ -4,8 +4,8 @@ import Image from "next/image";
 import { escorts } from "@/data/escorts";
 
 export const metadata: Metadata = {
-  title: "Our Escorts | Buckinghamshire Escorts Agency",
-  description: "Browse our stunning selection of elite escorts available across Buckinghamshire. Professional companions in Milton Keynes, High Wycombe, Aylesbury and beyond. Outcall only.",
+  title: "Our Escorts | Bedfordshire Escorts Agency",
+  description: "Browse our stunning selection of elite escorts available across Bedfordshire. Professional companions in Milton Keynes, High Wycombe, Aylesbury and beyond. Outcall only.",
 };
 
 export default function EscortsPage() {
@@ -129,7 +129,7 @@ export default function EscortsPage() {
               </h3>
               <p className="text-gray-400 text-sm">
                 We are an outcall-only agency. Our escorts travel directly to your home, 
-                hotel, or suitable private venue anywhere in Buckinghamshire.
+                hotel, or suitable private venue anywhere in Bedfordshire.
               </p>
             </div>
           </div>

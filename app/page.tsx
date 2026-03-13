@@ -3,28 +3,28 @@ import Image from "next/image";
 import { escorts } from "@/data/escorts";
 
 const towns = [
-  { name: "Milton Keynes", description: "Our largest service area with diverse escort options" },
-  { name: "High Wycombe", description: "Premium companions in the heart of the Chilterns" },
-  { name: "Aylesbury", description: "Elite escorts in the county town" },
-  { name: "Amersham", description: "Sophisticated companionship in historic surroundings" },
-  { name: "Chesham", description: "Discreet services in the Chess Valley" },
-  { name: "Beaconsfield", description: "Luxury escorts for discerning clients" },
-  { name: "Marlow", description: "Riverside town with premium companions" },
-  { name: "Buckingham", description: "Historic market town escort services" },
-  { name: "Princes Risborough", description: "Charming Chiltern escorts" },
-  { name: "Winslow", description: "Boutique escort services" },
-  { name: "Newport Pagnell", description: "Quality companionship near the M1" },
-  { name: "Olney", description: "Intimate escort experiences" },
-  { name: "Gerrards Cross", description: "Exclusive escorts for affluent areas" },
-  { name: "Great Missenden", description: "Countryside charm meets elite companionship" },
-  { name: "Wendover", description: "Picturesque setting, premium service" },
-  { name: "Burnham", description: "South Bucks premier escort service" },
+  { name: "Bedford", description: "Our main service area in the historic county town" },
+  { name: "Luton", description: "Premium companions in Bedfordshire's largest town" },
+  { name: "Dunstable", description: "Elite escorts at the foot of the Chilterns" },
+  { name: "Leighton Buzzard", description: "Charming market town companionship" },
+  { name: "Biggleswade", description: "Discreet services in Central Bedfordshire" },
+  { name: "Sandy", description: "Peaceful town with quality escorts" },
+  { name: "Ampthill", description: "Georgian elegance meets premium service" },
+  { name: "Flitwick", description: "Well-connected town with excellent companions" },
+  { name: "Kempston", description: "Quality companionship near Bedford" },
+  { name: "Shefford", description: "Boutique escort services" },
+  { name: "Houghton Regis", description: "Premium escorts in South Bedfordshire" },
+  { name: "Potton", description: "Intimate escort experiences" },
+  { name: "Stotfold", description: "Discreet companionship services" },
+  { name: "Arlesey", description: "Historic village with elite escorts" },
+  { name: "Cranfield", description: "Sophisticated university town companions" },
+  { name: "Woburn", description: "Exclusive escorts for discerning clients" },
 ];
 
 const services = [
   {
     title: "Dinner Dates",
-    description: "Enjoy the company of a sophisticated escort for dining experiences at Buckinghamshire's finest restaurants.",
+    description: "Enjoy the company of a sophisticated escort for dining experiences at Bedfordshire's finest restaurants.",
     icon: "🍷",
   },
   {
@@ -67,13 +67,13 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6">
             <span className="text-amber-400">Elite</span> Escorts in
             <br />
-            <span className="text-white">Buckinghamshire</span>
+            <span className="text-white">Bedfordshire</span>
           </h1>
           
           <div className="divider-gold my-8"></div>
           
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Premium outcall escort services across Buckinghamshire. 
+            Premium outcall escort services across Bedfordshire. 
             Our stunning companions travel directly to your home, hotel, 
             or private venue. Discretion guaranteed.
           </p>
@@ -133,7 +133,7 @@ export default function Home() {
             <div className="divider-gold"></div>
             <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
               Meet some of our most popular companions, available for outcall 
-              bookings throughout Buckinghamshire.
+              bookings throughout Bedfordshire.
             </p>
           </div>
 
@@ -191,7 +191,7 @@ export default function Home() {
             Outcall Only Service
           </h3>
           <p className="text-black/80">
-            Our escorts travel directly to your home, hotel, or private venue anywhere in Buckinghamshire. 
+            Our escorts travel directly to your home, hotel, or private venue anywhere in Bedfordshire. 
             Maximum convenience, complete discretion.
           </p>
         </div>
@@ -283,7 +283,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white">Outcall Across Buckinghamshire</h3>
+                    <h3 className="text-lg font-semibold text-white">Outcall Across Bedfordshire</h3>
                     <p className="text-gray-400 text-sm mt-1">We come to you – home, hotel, or private venue. 16 towns covered.</p>
                   </div>
                 </div>
@@ -324,7 +324,7 @@ export default function Home() {
             </h2>
             <div className="divider-gold"></div>
             <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-              Our escorts travel throughout Buckinghamshire. 
+              Our escorts travel throughout Bedfordshire. 
               Select your location to find companions available in your area.
             </p>
           </div>
@@ -360,7 +360,7 @@ export default function Home() {
           </h2>
           <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
             Contact us today to arrange an unforgettable encounter with one of our 
-            stunning escorts. We travel to you anywhere in Buckinghamshire.
+            stunning escorts. We travel to you anywhere in Bedfordshire.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

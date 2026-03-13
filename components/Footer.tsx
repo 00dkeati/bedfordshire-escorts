@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const towns = [
-  "Milton Keynes", "High Wycombe", "Aylesbury", "Amersham", "Chesham",
-  "Beaconsfield", "Marlow", "Buckingham", "Princes Risborough", "Winslow",
-  "Newport Pagnell", "Olney", "Gerrards Cross", "Great Missenden", "Wendover", "Burnham"
+  "Bedford", "Luton", "Dunstable", "Leighton Buzzard", "Biggleswade",
+  "Sandy", "Ampthill", "Flitwick", "Kempston", "Shefford",
+  "Houghton Regis", "Potton", "Stotfold", "Arlesey", "Cranfield", "Woburn"
 ];
 
 export default function Footer() {
@@ -14,11 +14,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-playfair font-bold mb-4">
-              <span className="text-amber-400">Buckinghamshire</span>
+              <span className="text-amber-400">Bedfordshire</span>
               <span className="text-white">Escorts</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Buckinghamshire&apos;s premier outcall escort agency providing elite companionship 
+              Bedfordshire&apos;s premier outcall escort agency providing elite companionship 
               services with discretion and professionalism throughout the county. We come to you.
             </p>
           </div>
@@ -102,7 +102,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-zinc-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} Buckinghamshire Escorts Agency. All rights reserved.
+              © {new Date().getFullYear()} Bedfordshire Escorts Agency. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-gray-500 hover:text-amber-400 transition-colors">Privacy Policy</Link>

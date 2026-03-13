@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Buckinghamshire Escorts Agency",
-  description: "Learn about Buckinghamshire Escorts Agency, the premier escort service provider across Milton Keynes, High Wycombe, Aylesbury and all of Buckinghamshire.",
+  title: "About Us | Bedfordshire Escorts Agency",
+  description: "Learn about Bedfordshire Escorts Agency, the premier escort service provider across Milton Keynes, High Wycombe, Aylesbury and all of Bedfordshire.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
           </h1>
           <div className="divider-gold my-8"></div>
           <p className="text-xl text-gray-300">
-            Buckinghamshire&apos;s premier escort agency
+            Bedfordshire&apos;s premier escort agency
           </p>
         </div>
       </section>
@@ -32,12 +32,12 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                Buckinghamshire Escorts Agency was established to provide discerning clients across 
-                Buckinghamshire with access to the finest companionship services. We understand that 
+                Bedfordshire Escorts Agency was established to provide discerning clients across 
+                Bedfordshire with access to the finest companionship services. We understand that 
                 our clients lead busy, demanding lives and deserve moments of genuine connection and relaxation.
               </p>
               <p>
-                Our carefully curated selection of escorts represents the very best that Buckinghamshire 
+                Our carefully curated selection of escorts represents the very best that Bedfordshire 
                 has to offer. Each companion is chosen not only for their beauty but for their intelligence, 
                 charm, and ability to put clients at ease in any situation.
               </p>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-amber-400">✓</span>
-                  <span>Countywide coverage across Buckinghamshire</span>
+                  <span>Countywide coverage across Bedfordshire</span>
                 </li>
               </ul>
             </div>

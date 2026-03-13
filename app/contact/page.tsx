@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Buckinghamshire Escorts Agency",
-  description: "Get in touch with Buckinghamshire Escorts Agency via WhatsApp. Available 24/7 for bookings and enquiries across Milton Keynes, High Wycombe, Aylesbury and all of Buckinghamshire.",
+  title: "Contact Us | Bedfordshire Escorts Agency",
+  description: "Get in touch with Bedfordshire Escorts Agency via WhatsApp. Available 24/7 for bookings and enquiries across Milton Keynes, High Wycombe, Aylesbury and all of Bedfordshire.",
 };
 
 const WHATSAPP_NUMBER = "447405830656";
@@ -91,7 +91,7 @@ export default function ContactPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">All of Buckinghamshire</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">All of Bedfordshire</h3>
               <p className="text-gray-400 text-sm">Milton Keynes, High Wycombe, Aylesbury & more</p>
             </div>
           </div>

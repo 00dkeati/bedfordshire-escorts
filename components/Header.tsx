@@ -13,7 +13,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-playfair font-bold">
-              <span className="text-amber-400">Buckinghamshire</span>
+              <span className="text-amber-400">Bedfordshire</span>
               <span className="text-white">Escorts</span>
             </span>
           </Link>

@@ -18,13 +18,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Page Not Found" };
   }
 
-  const title = `${type.title} in ${town.name} | Buckinghamshire Escorts Agency`;
+  const title = `${type.title} in ${town.name} | Bedfordshire Escorts Agency`;
   const description = `Looking for ${type.name.toLowerCase()} escorts in ${town.name}? ${type.shortDesc} Outcall service throughout ${town.region}. Book your ${town.name} ${type.name.toLowerCase()} escort today.`;
 
   return {
     title,
     description,
-    keywords: `${type.name.toLowerCase()} escorts ${town.name}, ${town.name} ${type.name.toLowerCase()} escorts, ${type.slug} escort ${town.name}, ${type.name.toLowerCase()} escort agency ${town.name}, best ${type.name.toLowerCase()} escorts ${town.region}, Buckinghamshire ${type.name.toLowerCase()} escorts, ${type.name.toLowerCase()} companions ${town.name}`,
+    keywords: `${type.name.toLowerCase()} escorts ${town.name}, ${town.name} ${type.name.toLowerCase()} escorts, ${type.slug} escort ${town.name}, ${type.name.toLowerCase()} escort agency ${town.name}, best ${type.name.toLowerCase()} escorts ${town.region}, Bedfordshire ${type.name.toLowerCase()} escorts, ${type.name.toLowerCase()} companions ${town.name}`,
     openGraph: {
       title,
       description,
@@ -85,7 +85,7 @@ export default async function TownTypePage({ params }: PageProps) {
       <section className="py-20 bg-gradient-to-b from-black via-zinc-900 to-zinc-950">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="text-amber-400 text-sm uppercase tracking-wider mb-4">
-            {town.region} • Buckinghamshire
+            {town.region} • Bedfordshire
           </div>
           <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
             <span className="text-amber-400">{type.name}</span>
@@ -119,7 +119,7 @@ export default async function TownTypePage({ params }: PageProps) {
               {/* Introduction */}
               <article className="card-elegant">
                 <h2 className="text-2xl font-playfair font-semibold text-white mb-6">
-                  {type.title} in {town.name}, Buckinghamshire
+                  {type.title} in {town.name}, Bedfordshire
                 </h2>
                 <div className="prose prose-lg text-gray-300 leading-relaxed space-y-4">
                   <p>{type.intro}</p>
@@ -195,7 +195,7 @@ export default async function TownTypePage({ params }: PageProps) {
                 <div className="prose text-gray-300 leading-relaxed space-y-4">
                   <p>
                     {town.name} is located in the heart of {town.region}, making it an ideal location for 
-                    {type.name.toLowerCase()} escort services in Buckinghamshire. {town.description}
+                    {type.name.toLowerCase()} escort services in Bedfordshire. {town.description}
                   </p>
                   <p>
                     We are an outcall-only agency – our {type.name.toLowerCase()} escorts travel directly to you 
@@ -209,10 +209,10 @@ export default async function TownTypePage({ params }: PageProps) {
                     private encounters at your accommodation, or any other arrangement that suits your preferences.
                   </p>
                   <p>
-                    With a population of {town.population}, {town.name} is {town.region === 'North Buckinghamshire' 
-                      ? 'one of the key towns in North Buckinghamshire' 
-                      : town.region === 'South Buckinghamshire'
-                      ? 'situated in the affluent South Buckinghamshire area'
+                    With a population of {town.population}, {town.name} is {town.region === 'North Bedfordshire' 
+                      ? 'one of the key towns in North Bedfordshire' 
+                      : town.region === 'South Bedfordshire'
+                      ? 'situated in the affluent South Bedfordshire area'
                       : 'nestled in the beautiful Chiltern District'}, offering easy access to surrounding areas. 
                     Our {type.name.toLowerCase()} escorts travel throughout the region to meet you at your 
                     home, hotel, or private venue – we are outcall only.
@@ -227,7 +227,7 @@ export default async function TownTypePage({ params }: PageProps) {
                 </h2>
                 <div className="prose text-gray-300 leading-relaxed space-y-4">
                   <p>
-                    At Buckinghamshire Escorts Agency, we pride ourselves on providing the highest quality 
+                    At Bedfordshire Escorts Agency, we pride ourselves on providing the highest quality 
                     {type.name.toLowerCase()} escort services in {town.name} and throughout {town.region}. 
                     Our selection process ensures that every {type.name.toLowerCase()} escort meets our 
                     exacting standards for appearance, personality, and professionalism.
@@ -337,10 +337,10 @@ export default async function TownTypePage({ params }: PageProps) {
       <section className="py-16 section-gradient">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-playfair font-bold text-center text-white mb-4">
-            {type.title} Across <span className="text-amber-400">Buckinghamshire</span>
+            {type.title} Across <span className="text-amber-400">Bedfordshire</span>
           </h2>
           <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
-            Our {type.name.toLowerCase()} escorts are available throughout Buckinghamshire. 
+            Our {type.name.toLowerCase()} escorts are available throughout Bedfordshire. 
             Select another location to find {type.name.toLowerCase()} companions in your area.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
@@ -366,7 +366,7 @@ export default async function TownTypePage({ params }: PageProps) {
             Book Your <span className="text-amber-400">{type.name}</span> Escort in {town.name} Today
           </h2>
           <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
-            Don&apos;t wait – contact Buckinghamshire Escorts Agency now to arrange an unforgettable 
+            Don&apos;t wait – contact Bedfordshire Escorts Agency now to arrange an unforgettable 
             encounter with one of our stunning {type.name.toLowerCase()} escorts in {town.name}. 
             Discretion guaranteed, satisfaction assured.
           </p>
@@ -389,18 +389,18 @@ export default async function TownTypePage({ params }: PageProps) {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": `${type.title} in ${town.name}`,
-            "description": `${type.shortDesc} Available in ${town.name}, ${town.region}, Buckinghamshire.`,
+            "description": `${type.shortDesc} Available in ${town.name}, ${town.region}, Bedfordshire.`,
             "provider": {
               "@type": "Organization",
-              "name": "Buckinghamshire Escorts Agency",
-              "url": "https://buckinghamshireescorts.agency"
+              "name": "Bedfordshire Escorts Agency",
+              "url": "https://bedfordshireescorts.agency"
             },
             "areaServed": {
               "@type": "City",
               "name": town.name,
               "containedInPlace": {
                 "@type": "AdministrativeArea",
-                "name": "Buckinghamshire",
+                "name": "Bedfordshire",
                 "containedInPlace": {
                   "@type": "Country",
                   "name": "United Kingdom"

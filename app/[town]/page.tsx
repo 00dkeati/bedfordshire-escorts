@@ -16,9 +16,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Escorts in ${town.name} | All Types & Services | Buckinghamshire Escorts`,
+    title: `Escorts in ${town.name} | All Types & Services | Bedfordshire Escorts`,
     description: `Browse all escort types and services available in ${town.name}, ${town.region}. Blonde, brunette, mature, elite escorts and more. Incall & outcall available.`,
-    keywords: `${town.name} escorts, escort agency ${town.name}, all escorts ${town.name}, ${town.region} escorts, Buckinghamshire escorts`,
+    keywords: `${town.name} escorts, escort agency ${town.name}, all escorts ${town.name}, ${town.region} escorts, Bedfordshire escorts`,
   };
 }
 
@@ -180,15 +180,15 @@ export default async function TownPage({ params }: PageProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": `Buckinghamshire Escorts - ${town.name}`,
+            "name": `Bedfordshire Escorts - ${town.name}`,
             "description": `Premium escort services in ${town.name}, ${town.region}`,
-            "url": `https://buckinghamshireescorts.agency/${townSlug}`,
+            "url": `https://bedfordshireescorts.agency/${townSlug}`,
             "areaServed": {
               "@type": "City",
               "name": town.name,
               "containedInPlace": {
                 "@type": "AdministrativeArea",
-                "name": "Buckinghamshire"
+                "name": "Bedfordshire"
               }
             }
           })

@@ -2,15 +2,15 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Our Services | Buckinghamshire Escorts Agency",
-  description: "Discover the range of escort services available across Buckinghamshire. Dinner dates, social events, travel companions and private encounters.",
+  title: "Our Services | Bedfordshire Escorts Agency",
+  description: "Discover the range of escort services available across Bedfordshire. Dinner dates, social events, travel companions and private encounters.",
 };
 
 const services = [
   {
     title: "Dinner Dates",
     icon: "🍷",
-    description: "Enjoy the company of a sophisticated escort at Buckinghamshire's finest restaurants. Our companions are engaging conversationalists who will make your dining experience truly memorable.",
+    description: "Enjoy the company of a sophisticated escort at Bedfordshire's finest restaurants. Our companions are engaging conversationalists who will make your dining experience truly memorable.",
     features: [
       "Restaurant recommendations",
       "Intelligent conversation",

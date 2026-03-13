@@ -3,118 +3,118 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 const towns: Record<string, { name: string; description: string; content: string }> = {
-  "milton-keynes": {
-    name: "Milton Keynes",
-    description: "Premier outcall escort services in Milton Keynes, Buckinghamshire's largest city",
-    content: `Milton Keynes is the largest urban area in Buckinghamshire and home to many of our most sought-after escorts. 
-    With its modern architecture, excellent hotels, and vibrant nightlife, MK is the perfect setting for an unforgettable encounter.
-    As an outcall-only agency, our Milton Keynes escorts travel directly to your home, hotel, or private venue throughout the city, 
-    including Central Milton Keynes, Bletchley, Wolverton, and surrounding areas.`
+  "bedford": {
+    name: "Bedford",
+    description: "Premier outcall escort services in Bedford, Bedfordshire's historic county town",
+    content: `Bedford is the historic county town of Bedfordshire and home to many of our most sought-after escorts. 
+    With its beautiful River Great Ouse embankment, excellent hotels, and vibrant hospitality scene, Bedford is the perfect setting for an unforgettable encounter.
+    As an outcall-only agency, our Bedford escorts travel directly to your home, hotel, or private venue throughout the town, 
+    including the town centre, Kempston, Goldington, and surrounding areas.`
   },
-  "high-wycombe": {
-    name: "High Wycombe",
-    description: "Elite escorts in High Wycombe, nestled in the beautiful Chiltern Hills",
-    content: `High Wycombe, the second largest town in Buckinghamshire, offers a perfect blend of historic charm and modern amenities.
-    Our High Wycombe escorts are sophisticated companions ideal for dinner dates at the town's fine restaurants or private encounters.
-    We cover all areas including the town centre, Loudwater, Hazlemere, and the surrounding Chiltern villages.`
+  "luton": {
+    name: "Luton",
+    description: "Elite escorts in Luton, Bedfordshire's largest and most vibrant town",
+    content: `Luton, the largest town in Bedfordshire, offers a multicultural and vibrant setting for quality companionship.
+    Our Luton escorts are sophisticated companions ideal for dinner dates at the town's diverse restaurants or private encounters.
+    We cover all areas including the town centre, London Luton Airport hotels, Harpenden borders, and surrounding neighbourhoods.`
   },
-  "aylesbury": {
-    name: "Aylesbury",
-    description: "Premium escort services in Aylesbury, the historic county town of Buckinghamshire",
-    content: `As the county town of Buckinghamshire, Aylesbury combines rich history with modern living. 
-    Our Aylesbury escorts offer refined companionship for clients seeking discretion and quality in this historic market town.
-    Services are available throughout Aylesbury Vale, including Wendover, Waddesdon, and surrounding villages.`
+  "dunstable": {
+    name: "Dunstable",
+    description: "Premium escort services in Dunstable, at the foot of the beautiful Chiltern Hills",
+    content: `Dunstable, an ancient market town with Roman origins, combines rich history with modern amenities. 
+    Our Dunstable escorts offer refined companionship for clients seeking discretion and quality near the stunning Dunstable Downs.
+    Services are available throughout Dunstable, including Houghton Regis and surrounding villages.`
   },
-  "amersham": {
-    name: "Amersham",
-    description: "Sophisticated escorts in Amersham, one of the Chilterns' most prestigious towns",
-    content: `Amersham, with its beautiful Old Town and affluent character, attracts clients seeking the finest companionship.
-    Our Amersham escorts reflect the town's sophisticated atmosphere, offering elegant company for any occasion.
-    We serve both Old Amersham and Amersham-on-the-Hill, as well as nearby areas.`
+  "leighton-buzzard": {
+    name: "Leighton Buzzard",
+    description: "Sophisticated escorts in Leighton Buzzard, a charming market town with excellent connections",
+    content: `Leighton Buzzard, with its beautiful high street and traditional market, attracts clients seeking quality companionship.
+    Our Leighton Buzzard escorts reflect the town's charming character, offering elegant company for any occasion.
+    We serve the town centre, the canal-side areas, and nearby Linslade.`
   },
-  "chesham": {
-    name: "Chesham",
-    description: "Discreet escort services in Chesham, a charming Chess Valley town",
-    content: `Nestled in the Chess Valley, Chesham offers a peaceful setting for those seeking quality companionship.
-    Our Chesham escorts provide discreet, professional services in this charming market town.
-    Coverage includes Chesham town centre and the surrounding Chiltern countryside.`
+  "biggleswade": {
+    name: "Biggleswade",
+    description: "Discreet escort services in Biggleswade, a traditional market town on the River Ivel",
+    content: `Nestled on the River Ivel, Biggleswade offers a peaceful setting for those seeking quality companionship.
+    Our Biggleswade escorts provide discreet, professional services in this charming market town.
+    Coverage includes Biggleswade town centre and the surrounding Central Bedfordshire countryside.`
   },
-  "beaconsfield": {
-    name: "Beaconsfield",
-    description: "Luxury escorts in Beaconsfield, one of England's most affluent towns",
-    content: `Beaconsfield is renowned for its affluence and charm, making it home to some of our most exclusive escorts.
-    Whether you're seeking companionship at Bekonscot Model Village or a private encounter, our Beaconsfield escorts deliver excellence.
-    Services extend to the Old Town, New Town, and surrounding areas including Seer Green and Jordans.`
+  "sandy": {
+    name: "Sandy",
+    description: "Quality escorts in Sandy, home to the RSPB headquarters",
+    content: `Sandy is a quiet market town with excellent wildlife credentials and a peaceful atmosphere.
+    Our Sandy escorts provide refined companionship in this tranquil setting, perfect for those seeking discretion.
+    Services extend to the RSPB Lodge area and surrounding villages.`
   },
-  "marlow": {
-    name: "Marlow",
-    description: "Riverside escorts in Marlow, an elegant Thames-side town",
-    content: `The picturesque town of Marlow, with its iconic suspension bridge and riverside setting, is perfect for romantic encounters.
-    Our Marlow escorts are ideal companions for fine dining at the town's celebrated restaurants or private meetings.
-    We cover Marlow Bottom, Little Marlow, and the surrounding Thames Valley area.`
+  "ampthill": {
+    name: "Ampthill",
+    description: "Premium escorts in Ampthill, one of the UK's best places to live",
+    content: `The picturesque Georgian market town of Ampthill, consistently ranked among Britain's finest, is perfect for sophisticated encounters.
+    Our Ampthill escorts match the town's elegant character with style and refinement.
+    We cover Ampthill, Ampthill Great Park, and surrounding areas including Flitwick.`
   },
-  "buckingham": {
-    name: "Buckingham",
-    description: "Traditional escort services in the historic market town of Buckingham",
-    content: `The historic market town of Buckingham, once the county town, retains its classic English charm.
-    Our Buckingham escorts offer refined companionship in this university town, serving both residents and visitors.
-    Services available throughout North Buckinghamshire.`
+  "flitwick": {
+    name: "Flitwick",
+    description: "Well-connected escorts in Flitwick, with excellent rail links to London",
+    content: `Flitwick offers excellent transport connections while maintaining a pleasant suburban character.
+    Our Flitwick escorts provide quality companionship for both local residents and business travellers.
+    Services available throughout Flitwick and to nearby Ampthill.`
   },
-  "princes-risborough": {
-    name: "Princes Risborough",
-    description: "Charming escorts in Princes Risborough, gateway to the Chilterns",
-    content: `At the foot of the Chiltern escarpment, Princes Risborough offers stunning countryside and genuine charm.
-    Our Princes Risborough escorts provide quality companionship in this picturesque market town.
-    Coverage includes Monks Risborough, Longwick, and surrounding villages.`
+  "kempston": {
+    name: "Kempston",
+    description: "Convenient escort services in Kempston, adjacent to Bedford",
+    content: `Kempston, directly adjoining Bedford, offers suburban convenience with easy access to the county town's amenities.
+    Our Kempston escorts provide discreet, professional services in this residential area.
+    Coverage extends throughout Kempston and into central Bedford.`
   },
-  "winslow": {
-    name: "Winslow",
-    description: "Boutique escort services in the charming town of Winslow",
-    content: `The charming market town of Winslow, with its Georgian architecture and community spirit, is perfect for discreet encounters.
-    Our Winslow escorts offer intimate, professional companionship in this North Bucks gem.
-    Services available throughout Winslow and surrounding villages.`
+  "shefford": {
+    name: "Shefford",
+    description: "Boutique escort services in the charming town of Shefford",
+    content: `The charming market town of Shefford, with its strong community spirit and traditional character, is perfect for discreet encounters.
+    Our Shefford escorts offer intimate, professional companionship in this Central Bedfordshire gem.
+    Services available throughout Shefford and surrounding villages.`
   },
-  "newport-pagnell": {
-    name: "Newport Pagnell",
-    description: "Quality escorts in Newport Pagnell, historic town near Milton Keynes",
-    content: `Newport Pagnell, known for its historic high street and proximity to Milton Keynes, offers convenient access to quality companionship.
-    Our Newport Pagnell escorts serve clients seeking discretion in this traditional market town.
-    Coverage extends to Olney, Sherington, and surrounding areas.`
+  "houghton-regis": {
+    name: "Houghton Regis",
+    description: "Quality escorts in Houghton Regis, adjacent to Dunstable",
+    content: `Houghton Regis, adjoining Dunstable, provides easy access to the Chilterns and South Bedfordshire.
+    Our Houghton Regis escorts serve clients seeking discretion with convenient access to Dunstable Downs.
+    Coverage includes Houghton Regis and neighbouring Dunstable areas.`
   },
-  "olney": {
-    name: "Olney",
-    description: "Intimate escort experiences in the historic town of Olney",
-    content: `The picturesque market town of Olney, famous for its Pancake Race and beautiful high street, provides a charming backdrop.
-    Our Olney escorts offer intimate, quality companionship in this North Buckinghamshire gem.
-    Services available in Olney and the surrounding countryside.`
+  "potton": {
+    name: "Potton",
+    description: "Intimate escort experiences in the historic town of Potton",
+    content: `The historic market town of Potton, with roots dating to the Domesday Book, provides a charming backdrop.
+    Our Potton escorts offer intimate, quality companionship in this traditional Bedfordshire setting.
+    Services available in Potton and the surrounding countryside.`
   },
-  "gerrards-cross": {
-    name: "Gerrards Cross",
-    description: "Exclusive escorts in Gerrards Cross, one of England's wealthiest towns",
-    content: `Gerrards Cross, consistently ranked among England's most expensive places to live, demands the finest companionship.
-    Our Gerrards Cross escorts match the town's affluent character with sophistication and elegance.
-    We serve GX, Chalfont St Peter, and surrounding South Bucks areas.`
+  "stotfold": {
+    name: "Stotfold",
+    description: "Discreet escort services in the growing community of Stotfold",
+    content: `Stotfold, a growing village with excellent transport links, offers convenient access to quality companionship.
+    Our Stotfold escorts provide discreet, professional services in this friendly community.
+    We serve Stotfold and connections to nearby Biggleswade and Hitchin.`
   },
-  "great-missenden": {
-    name: "Great Missenden",
-    description: "Countryside escorts in Great Missenden, heart of the Chilterns",
-    content: `Great Missenden, the charming village that inspired Roald Dahl, offers a quintessentially English setting.
-    Our Great Missenden escorts provide refined companionship in this beautiful Chiltern location.
-    Services extend to Little Missenden, Prestwood, and surrounding areas.`
+  "arlesey": {
+    name: "Arlesey",
+    description: "Historic village escorts in Arlesey, one of Bedfordshire's oldest settlements",
+    content: `Arlesey, one of Bedfordshire's oldest villages with its own railway station, offers convenient access to quality companionship.
+    Our Arlesey escorts provide refined services in this historic setting with excellent rail connections.
+    Coverage includes Arlesey, the Blue Lagoon area, and surrounding villages.`
   },
-  "wendover": {
-    name: "Wendover",
-    description: "Premium escorts in Wendover, at the foot of the Chiltern Hills",
-    content: `The historic market town of Wendover, nestled beneath Coombe Hill, combines natural beauty with convenience.
-    Our Wendover escorts offer quality companionship in this picturesque Chiltern town.
-    Coverage includes Halton, Stoke Mandeville, and surrounding villages.`
+  "cranfield": {
+    name: "Cranfield",
+    description: "Sophisticated escorts in Cranfield, home to the prestigious university",
+    content: `Cranfield, home to the renowned university, attracts an international clientele seeking sophisticated companionship.
+    Our Cranfield escorts match the academic and professional character of this unique village.
+    Services available throughout Cranfield and surrounding areas.`
   },
-  "burnham": {
-    name: "Burnham",
-    description: "South Bucks escorts in Burnham, close to Slough and London",
-    content: `Burnham, with its famous Beeches and excellent transport links, serves clients seeking quality near London.
-    Our Burnham escorts provide convenient, discreet services in South Buckinghamshire.
-    We cover Burnham, Taplow, Farnham Common, and surrounding areas.`
+  "woburn": {
+    name: "Woburn",
+    description: "Exclusive escorts in Woburn, famous for the Abbey and Safari Park",
+    content: `The elegant Georgian village of Woburn, famous for Woburn Abbey and Safari Park, attracts discerning visitors.
+    Our Woburn escorts offer exclusive companionship matching the village's upmarket character.
+    We serve Woburn, the Abbey estate area, and surrounding Bedfordshire villages.`
   },
 };
 
@@ -133,9 +133,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${town.name} Escorts | Buckinghamshire Escorts Agency`,
+    title: `${town.name} Escorts | Bedfordshire Escorts Agency`,
     description: town.description,
-    keywords: `${town.name} escorts, escort agency ${town.name}, companionship ${town.name}, Buckinghamshire escorts`,
+    keywords: `${town.name} escorts, escort agency ${town.name}, companionship ${town.name}, Bedfordshire escorts`,
   };
 }
 
@@ -204,9 +204,17 @@ export default async function LocationPage({ params }: PageProps) {
               Contact us now to arrange your encounter with one of our stunning {town.name} companions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-gold">
-                Contact Us
-              </Link>
+              <a 
+                href="https://wa.me/447405830656"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded transition-colors"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp Us
+              </a>
               <Link href="/escorts" className="btn-outline">
                 View All Escorts
               </Link>

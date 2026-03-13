@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Buckinghamshire Escorts Agency",
-  description: "Terms of service for Buckinghamshire Escorts Agency.",
+  title: "Terms of Service | Bedfordshire Escorts Agency",
+  description: "Terms of service for Bedfordshire Escorts Agency.",
 };
 
 export default function TermsPage() {
@@ -23,7 +23,7 @@ export default function TermsPage() {
           <div className="card-elegant prose prose-invert max-w-none">
             <h2 className="text-amber-400">Introduction</h2>
             <p>
-              By using the Buckinghamshire Escorts Agency website and services, you agree to 
+              By using the Bedfordshire Escorts Agency website and services, you agree to 
               these terms of service. Please read them carefully.
             </p>
 
@@ -35,7 +35,7 @@ export default function TermsPage() {
 
             <h3>Nature of Services</h3>
             <p>
-              Buckinghamshire Escorts Agency acts solely as an introduction agency. We 
+              Bedfordshire Escorts Agency acts solely as an introduction agency. We 
               facilitate introductions between clients and independent escorts. Any 
               arrangements made between clients and escorts are at their own discretion.
             </p>
@@ -43,7 +43,7 @@ export default function TermsPage() {
             <h3>Escort Independence</h3>
             <p>
               All escorts listed on our website are independent contractors, not employees 
-              of Buckinghamshire Escorts Agency. They set their own rates, services, and 
+              of Bedfordshire Escorts Agency. They set their own rates, services, and 
               boundaries.
             </p>
 
@@ -69,7 +69,7 @@ export default function TermsPage() {
 
             <h3>Limitation of Liability</h3>
             <p>
-              Buckinghamshire Escorts Agency is not liable for any disputes, issues, or 
+              Bedfordshire Escorts Agency is not liable for any disputes, issues, or 
               incidents that may occur between clients and escorts. We act solely as an 
               introduction service.
             </p>
@@ -83,7 +83,7 @@ export default function TermsPage() {
             <h3>Contact</h3>
             <p>
               For any questions about these terms, please contact us at 
-              info@buckinghamshireescorts.agency
+              info@bedfordshireescorts.agency
             </p>
 
             <p className="text-sm text-gray-500 mt-8">
