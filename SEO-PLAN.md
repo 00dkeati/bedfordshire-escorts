@@ -1,4 +1,4 @@
-# Programmatic SEO Plan: BuckinghamshireEscorts.agency
+# Programmatic SEO Plan: BedfordshireEscorts.agency
 
 ## Current State
 - **237 pages** live
@@ -58,7 +58,7 @@
 
 ### 2.2 Blog/Guide Content (+20 pages)
 Create `/guides/` section:
-- /guides/first-time-booking-escort-buckinghamshire
+- /guides/first-time-booking-escort-bedfordshire
 - /guides/hotel-recommendations-milton-keynes
 - /guides/what-to-expect-gfe
 - /guides/escort-etiquette-guide
@@ -125,15 +125,15 @@ Monitor Search Console for:
 | milton keynes escorts | /milton-keynes |
 | escorts high wycombe | /high-wycombe |
 | escorts aylesbury | /aylesbury |
-| buckinghamshire escorts | / (homepage) |
+| bedfordshire escorts | / (homepage) |
 
 ### Tier 2 (Medium Volume, High Intent)
 | Keyword | Target Page |
 |---------|-------------|
 | blonde escorts milton keynes | /milton-keynes/blonde |
-| mature escorts buckinghamshire | /[town]/mature |
+| mature escorts bedfordshire | /[town]/mature |
 | gfe milton keynes | /milton-keynes/gfe |
-| outcall escorts buckinghamshire | /[town]/outcall |
+| outcall escorts bedfordshire | /[town]/outcall |
 
 ### Tier 3 (Long-tail, Lower Competition)
 | Keyword | Target Page |
@@ -149,7 +149,7 @@ Monitor Search Console for:
 
 ### 1. Submit Sitemap to Google
 ```
-https://buckinghamshireescorts.agency/sitemap.xml
+https://bedfordshireescorts.agency/sitemap.xml
 ```
 Go to: https://search.google.com/search-console
 Add property → Submit sitemap
@@ -158,7 +158,7 @@ Add property → Submit sitemap
 ```
 User-agent: *
 Allow: /
-Sitemap: https://buckinghamshireescorts.agency/sitemap.xml
+Sitemap: https://bedfordshireescorts.agency/sitemap.xml
 ```
 
 ### 3. Force Index Key Pages
@@ -176,7 +176,7 @@ Convert all escort PNGs to WebP, compress to <100KB each
 ### 5. Add Canonical Tags
 Ensure each page has self-referencing canonical:
 ```html
-<link rel="canonical" href="https://buckinghamshireescorts.agency/milton-keynes/blonde" />
+<link rel="canonical" href="https://bedfordshireescorts.agency/milton-keynes/blonde" />
 ```
 
 ---
