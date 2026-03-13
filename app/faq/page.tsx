@@ -102,7 +102,7 @@ export default function FAQPage() {
             Our friendly team is here to help with any enquiries you may have.
           </p>
           <a 
-            href="https://wa.me/447405830656"
+            href="https://wa.me/447424783087"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded transition-colors"

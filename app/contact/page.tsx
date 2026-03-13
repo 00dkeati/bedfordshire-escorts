@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Get in touch with Bedfordshire Escorts Agency via WhatsApp. Available 24/7 for bookings and enquiries across Milton Keynes, High Wycombe, Aylesbury and all of Bedfordshire.",
 };
 
-const WHATSAPP_NUMBER = "447405830656";
+const WHATSAPP_NUMBER = "447424783087";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export default function ContactPage() {
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </a>
 
             <p className="mt-6 text-amber-400 text-lg font-medium">
-              +44 7405 830656
+              +44 7424 783087
             </p>
           </div>
 

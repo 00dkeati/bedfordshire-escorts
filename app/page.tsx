@@ -83,7 +83,7 @@ export default function Home() {
               View Our Escorts
             </Link>
             <a 
-              href="https://wa.me/447405830656" 
+              href="https://wa.me/447424783087" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-lg px-10 py-4 rounded transition-colors"
@@ -364,7 +364,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://wa.me/447405830656" 
+              href="https://wa.me/447424783087" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-lg px-10 py-4 rounded transition-colors"
@@ -379,7 +379,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mt-6 text-amber-400 font-medium">
-            +44 7405 830656
+            +44 7424 783087
           </p>
           <p className="mt-2 text-gray-500 text-sm">
             Available 24/7 • Outcall Only • Complete Discretion
