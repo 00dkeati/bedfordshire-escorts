@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { escorts } from "@/data/escorts";
 
 const towns = [
   { name: "Milton Keynes", description: "Our largest service area with diverse escort options" },
@@ -31,16 +33,19 @@ const services = [
     icon: "✨",
   },
   {
-    title: "Private Companionship",
-    description: "Discreet and professional companionship services tailored to your preferences.",
-    icon: "💎",
+    title: "GFE",
+    description: "The girlfriend experience – natural, affectionate companionship that feels genuine and connected.",
+    icon: "💕",
   },
   {
-    title: "Travel Companion",
-    description: "Sophisticated escorts available for both domestic and international travel arrangements.",
-    icon: "✈️",
+    title: "Overnight Stays",
+    description: "Extended companionship for those special occasions when you want to take your time.",
+    icon: "🌙",
   },
 ];
+
+// Featured escorts for homepage
+const featuredEscorts = escorts.slice(0, 4);
 
 export default function Home() {
   return (
@@ -48,11 +53,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black"></div>
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/30 via-transparent to-transparent"></div>
         </div>
         
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+          {/* Outcall Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded-full mb-8">
+            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span className="text-amber-400 text-sm font-medium">Outcall Only – We Come To You</span>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6">
             <span className="text-amber-400">Elite</span> Escorts in
             <br />
@@ -62,39 +73,124 @@ export default function Home() {
           <div className="divider-gold my-8"></div>
           
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Experience the finest companionship services in Buckinghamshire. 
-            Our carefully selected escorts offer sophistication, discretion, 
-            and unforgettable experiences throughout the county.
+            Premium outcall escort services across Buckinghamshire. 
+            Our stunning companions travel directly to your home, hotel, 
+            or private venue. Discretion guaranteed.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/escorts" className="btn-gold">
+            <Link href="/escorts" className="btn-gold text-lg px-10 py-4">
               View Our Escorts
             </Link>
-            <Link href="/contact" className="btn-outline">
+            <Link href="/contact" className="btn-outline text-lg px-10 py-4">
               Book Now
             </Link>
           </div>
 
-          <div className="mt-16 flex justify-center space-x-12 text-center">
-            <div>
-              <div className="text-4xl font-playfair text-amber-400">16+</div>
-              <div className="text-gray-400 text-sm mt-1">Locations</div>
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+            <div className="text-center">
+              <div className="text-4xl font-playfair text-amber-400">6+</div>
+              <div className="text-gray-400 text-sm mt-1">Beautiful Escorts</div>
             </div>
-            <div>
+            <div className="text-center">
+              <div className="text-4xl font-playfair text-amber-400">16</div>
+              <div className="text-gray-400 text-sm mt-1">Towns Covered</div>
+            </div>
+            <div className="text-center">
               <div className="text-4xl font-playfair text-amber-400">24/7</div>
               <div className="text-gray-400 text-sm mt-1">Availability</div>
             </div>
-            <div>
+            <div className="text-center">
               <div className="text-4xl font-playfair text-amber-400">100%</div>
               <div className="text-gray-400 text-sm mt-1">Discretion</div>
             </div>
           </div>
+
+          {/* Scroll indicator */}
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Escorts Section */}
+      <section className="py-24 section-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair font-bold text-white mb-4">
+              Featured <span className="text-amber-400">Escorts</span>
+            </h2>
+            <div className="divider-gold"></div>
+            <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
+              Meet some of our most popular companions, available for outcall 
+              bookings throughout Buckinghamshire.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredEscorts.map((escort) => (
+              <Link 
+                key={escort.slug} 
+                href="/escorts"
+                className="card-elegant group overflow-hidden"
+              >
+                <div className="aspect-[3/4] relative rounded-lg overflow-hidden mb-4">
+                  <Image
+                    src={escort.image}
+                    alt={escort.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-xl font-playfair font-semibold text-white">
+                      {escort.name}
+                    </h3>
+                    <p className="text-amber-400 text-sm">
+                      {escort.age} • {escort.nationality}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {escort.tags.slice(0, 3).map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs rounded"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/escorts" className="btn-gold">
+              View All Escorts
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Outcall Banner */}
+      <section className="py-12 bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h3 className="text-2xl md:text-3xl font-playfair font-bold text-black mb-2">
+            Outcall Only Service
+          </h3>
+          <p className="text-black/80">
+            Our escorts travel directly to your home, hotel, or private venue anywhere in Buckinghamshire. 
+            Maximum convenience, complete discretion.
+          </p>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-24 section-dark">
+      <section className="py-24 section-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-white mb-4">
@@ -102,15 +198,15 @@ export default function Home() {
             </h2>
             <div className="divider-gold"></div>
             <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-              We offer a range of premium escort services designed to meet your needs 
-              with the utmost professionalism and discretion.
+              Premium escort services designed to meet your needs 
+              with professionalism and complete discretion.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
-              <div key={service.title} className="card-elegant text-center">
-                <div className="text-4xl mb-4">{service.icon}</div>
+              <div key={service.title} className="card-elegant text-center group hover:border-amber-500/50">
+                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">{service.icon}</div>
                 <h3 className="text-xl font-playfair font-semibold text-white mb-3">
                   {service.title}
                 </h3>
@@ -120,11 +216,17 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <Link href="/services" className="btn-outline">
+              View All Services
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 section-gradient">
+      <section className="py-24 section-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -146,12 +248,12 @@ export default function Home() {
                 <div className="flex space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center">
                     <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white">Premium Selection</h3>
-                    <p className="text-gray-400 text-sm mt-1">Hand-picked escorts who embody elegance, intelligence, and charm.</p>
+                    <h3 className="text-lg font-semibold text-white">Verified Escorts</h3>
+                    <p className="text-gray-400 text-sm mt-1">All photos are genuine and recent. What you see is exactly what you get.</p>
                   </div>
                 </div>
                 <div className="flex space-x-4">
@@ -162,7 +264,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">24/7 Availability</h3>
-                    <p className="text-gray-400 text-sm mt-1">Our booking team is available around the clock to assist you.</p>
+                    <p className="text-gray-400 text-sm mt-1">Our booking team is available around the clock to assist you with arrangements.</p>
                   </div>
                 </div>
                 <div className="flex space-x-4">
@@ -173,19 +275,32 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white">Countywide Coverage</h3>
-                    <p className="text-gray-400 text-sm mt-1">Serving all major towns across Buckinghamshire – outcall only, we come to you.</p>
+                    <h3 className="text-lg font-semibold text-white">Outcall Across Buckinghamshire</h3>
+                    <p className="text-gray-400 text-sm mt-1">We come to you – home, hotel, or private venue. 16 towns covered.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-lg bg-gradient-to-br from-amber-500/20 to-transparent border border-amber-500/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-8xl font-playfair text-amber-400/30">BE</div>
-                  <div className="text-2xl font-playfair text-amber-400 mt-2">Buckinghamshire Escorts</div>
-                  <div className="text-gray-500 text-sm mt-2">Est. 2024</div>
-                </div>
+              <div className="grid grid-cols-2 gap-4">
+                {featuredEscorts.slice(0, 4).map((escort, idx) => (
+                  <div 
+                    key={escort.slug}
+                    className={`aspect-[3/4] relative rounded-lg overflow-hidden ${idx === 0 ? 'col-span-2 row-span-2' : ''}`}
+                  >
+                    <Image
+                      src={escort.image}
+                      alt={escort.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="absolute bottom-3 left-3">
+                      <span className="text-white font-playfair font-semibold">{escort.name}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -193,7 +308,7 @@ export default function Home() {
       </section>
 
       {/* Locations Section */}
-      <section className="py-24 section-dark">
+      <section className="py-24 section-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-white mb-4">
@@ -201,53 +316,55 @@ export default function Home() {
             </h2>
             <div className="divider-gold"></div>
             <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-              Our escorts are available throughout Buckinghamshire. 
-              Select your location to find companions in your area.
+              Our escorts travel throughout Buckinghamshire. 
+              Select your location to find companions available in your area.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {towns.map((town) => (
               <Link
                 key={town.name}
-                href={`/locations/${town.name.toLowerCase().replace(/ /g, "-")}`}
-                className="card-elegant group"
+                href={`/${town.name.toLowerCase().replace(/ /g, "-")}`}
+                className="card-elegant group py-4 text-center"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">
+                <h3 className="text-base font-semibold text-white group-hover:text-amber-400 transition-colors">
                   {town.name}
                 </h3>
-                <p className="text-gray-500 text-sm mt-1">{town.description}</p>
-                <div className="mt-3 text-amber-400 text-sm flex items-center">
-                  View Escorts
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
               </Link>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/locations" className="text-amber-400 hover:text-amber-300 text-sm">
+              View all locations with details →
+            </Link>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/20 via-black to-amber-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/30 via-black to-amber-900/30"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-playfair font-bold text-white mb-6">
-            Ready to Experience <span className="text-amber-400">Excellence?</span>
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
+            Ready to Book?
           </h2>
-          <p className="text-gray-300 text-lg mb-10">
+          <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
             Contact us today to arrange an unforgettable encounter with one of our 
-            stunning Buckinghamshire escorts. Discretion guaranteed.
+            stunning escorts. We travel to you anywhere in Buckinghamshire.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-gold">
+            <Link href="/contact" className="btn-gold text-lg px-10 py-4">
               Contact Us Now
             </Link>
-            <Link href="/escorts" className="btn-outline">
+            <Link href="/escorts" className="btn-outline text-lg px-10 py-4">
               Browse Escorts
             </Link>
           </div>
+          <p className="mt-8 text-gray-500 text-sm">
+            Available 24/7 • Outcall Only • Complete Discretion
+          </p>
         </div>
       </section>
     </>
