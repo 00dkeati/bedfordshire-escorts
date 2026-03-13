@@ -1,8 +1,4 @@
-# Buckinghamshire Escorts Agency
-# https://buckinghamshireescorts.agency
-
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://buckinghamshireescorts.agency/sitemap.xml
+Sitemap: https://bedfordshireescorts.agency/sitemap.xml
