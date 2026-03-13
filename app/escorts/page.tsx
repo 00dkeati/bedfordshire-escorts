@@ -1,55 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { escorts } from "@/data/escorts";
 
 export const metadata: Metadata = {
   title: "Our Escorts | Buckinghamshire Escorts Agency",
-  description: "Browse our stunning selection of elite escorts available across Buckinghamshire. Professional companions in Milton Keynes, High Wycombe, Aylesbury and beyond.",
+  description: "Browse our stunning selection of elite escorts available across Buckinghamshire. Professional companions in Milton Keynes, High Wycombe, Aylesbury and beyond. Outcall only.",
 };
-
-const escorts = [
-  {
-    name: "Isabella",
-    age: 24,
-    location: "Milton Keynes",
-    description: "Elegant brunette with a passion for fine dining and stimulating conversation.",
-    tags: ["Dinner Dates", "Events", "Travel"],
-  },
-  {
-    name: "Sophia",
-    age: 26,
-    location: "High Wycombe",
-    description: "Sophisticated blonde professional who knows how to make every moment special.",
-    tags: ["Professional", "Outcall", "GFE"],
-  },
-  {
-    name: "Victoria",
-    age: 28,
-    location: "Aylesbury",
-    description: "Charming and witty companion with a love for art and culture.",
-    tags: ["Cultural Events", "Private", "Intelligent"],
-  },
-  {
-    name: "Emma",
-    age: 23,
-    location: "Amersham",
-    description: "Bubbly and fun-loving escort who brings joy to every encounter.",
-    tags: ["Fun", "Energetic", "Party"],
-  },
-  {
-    name: "Charlotte",
-    age: 27,
-    location: "Beaconsfield",
-    description: "Refined and elegant companion perfect for upscale occasions.",
-    tags: ["Luxury", "Events", "Elite"],
-  },
-  {
-    name: "Olivia",
-    age: 25,
-    location: "Marlow",
-    description: "Natural beauty with a warm personality and genuine charm.",
-    tags: ["Natural", "Warm", "Authentic"],
-  },
-];
 
 export default function EscortsPage() {
   return (
@@ -63,7 +20,7 @@ export default function EscortsPage() {
           </h1>
           <div className="divider-gold my-8"></div>
           <p className="text-xl text-gray-300">
-            Meet our carefully selected companions
+            Meet our carefully selected companions – outcall only, we come to you
           </p>
         </div>
       </section>
@@ -73,26 +30,40 @@ export default function EscortsPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {escorts.map((escort) => (
-              <div key={escort.name} className="card-elegant group">
-                {/* Placeholder Image */}
-                <div className="aspect-[3/4] bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-lg mb-4 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl text-amber-400/30 font-playfair">{escort.name[0]}</div>
-                    <p className="text-gray-600 text-sm mt-2">Photo Available on Request</p>
-                  </div>
+              <div key={escort.slug} className="card-elegant group">
+                {/* Photo */}
+                <div className="aspect-[3/4] relative rounded-lg overflow-hidden mb-4 bg-zinc-800">
+                  <Image
+                    src={escort.image}
+                    alt={escort.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
                 
                 <h3 className="text-2xl font-playfair font-semibold text-white group-hover:text-amber-400 transition-colors">
                   {escort.name}
                 </h3>
                 <p className="text-amber-400 text-sm mt-1">
-                  {escort.age} • {escort.location}
+                  {escort.age} • {escort.nationality} • {escort.height}
                 </p>
-                <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+                
+                {/* Stats */}
+                <div className="grid grid-cols-2 gap-2 mt-3 text-xs text-gray-400">
+                  <div>Bust: <span className="text-gray-300">{escort.bustSize}</span></div>
+                  <div>Dress: <span className="text-gray-300">{escort.dressSize}</span></div>
+                  <div>Hair: <span className="text-gray-300">{escort.hairColour}</span></div>
+                  <div>Eyes: <span className="text-gray-300">{escort.eyeColour}</span></div>
+                </div>
+
+                <p className="text-gray-400 text-sm mt-4 leading-relaxed line-clamp-3">
                   {escort.description}
                 </p>
+                
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {escort.tags.map((tag) => (
+                  {escort.tags.slice(0, 4).map((tag) => (
                     <span
                       key={tag}
                       className="px-3 py-1 bg-amber-500/10 text-amber-400 text-xs rounded-full"
@@ -101,6 +72,17 @@ export default function EscortsPage() {
                     </span>
                   ))}
                 </div>
+
+                {/* Services */}
+                <div className="flex gap-3 mt-4 text-xs">
+                  {escort.gfe && (
+                    <span className="text-green-400">✓ GFE</span>
+                  )}
+                  {escort.domination && (
+                    <span className="text-purple-400">✓ Domination</span>
+                  )}
+                </div>
+
                 <Link
                   href="/contact"
                   className="mt-6 block text-center btn-outline text-sm py-2"
@@ -117,8 +99,9 @@ export default function EscortsPage() {
               Looking for Someone <span className="text-amber-400">Specific?</span>
             </h3>
             <p className="text-gray-400 mb-6">
-              We have many more escorts available who are not listed on our website for privacy reasons.
+              We have more escorts available who are not listed on our website for privacy reasons.
               Contact us with your preferences and we&apos;ll match you with the perfect companion.
+              All bookings are outcall only – our escorts travel to you.
             </p>
             <Link href="/contact" className="btn-gold">
               Contact Us
@@ -142,11 +125,11 @@ export default function EscortsPage() {
             </div>
             <div className="card-elegant">
               <h3 className="text-xl font-playfair font-semibold text-amber-400 mb-4">
-                Privacy
+                Outcall Only
               </h3>
               <p className="text-gray-400 text-sm">
-                Many of our escorts prefer not to have their photos publicly displayed.
-                Contact us for private galleries and detailed profiles.
+                We are an outcall-only agency. Our escorts travel directly to your home, 
+                hotel, or suitable private venue anywhere in Buckinghamshire.
               </p>
             </div>
           </div>
