@@ -174,7 +174,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Countywide Coverage</h3>
-                    <p className="text-gray-400 text-sm mt-1">Serving all major towns across Buckinghamshire with incall and outcall options.</p>
+                    <p className="text-gray-400 text-sm mt-1">Serving all major towns across Buckinghamshire – outcall only, we come to you.</p>
                   </div>
                 </div>
               </div>

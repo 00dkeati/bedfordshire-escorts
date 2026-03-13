@@ -32,11 +32,11 @@ const services = [
   {
     title: "Private Companionship",
     icon: "💎",
-    description: "Discreet, intimate encounters tailored to your preferences. Whether at your home, hotel, or our escorts' private venues, enjoy complete privacy and professionalism.",
+    description: "Discreet, intimate encounters tailored to your preferences. Our escorts travel to your home, hotel, or private venue – we are outcall only for your convenience and privacy.",
     features: [
-      "Incall & outcall options",
+      "Outcall only – we come to you",
       "Completely discreet",
-      "Comfortable environments",
+      "Your comfortable environment",
       "Flexible durations",
     ],
   },

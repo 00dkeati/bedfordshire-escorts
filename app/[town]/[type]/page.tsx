@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const title = `${type.title} in ${town.name} | Buckinghamshire Escorts Agency`;
-  const description = `Looking for ${type.name.toLowerCase()} escorts in ${town.name}? ${type.shortDesc} Available for incall & outcall in ${town.region}. Book your ${town.name} ${type.name.toLowerCase()} escort today.`;
+  const description = `Looking for ${type.name.toLowerCase()} escorts in ${town.name}? ${type.shortDesc} Outcall service throughout ${town.region}. Book your ${town.name} ${type.name.toLowerCase()} escort today.`;
 
   return {
     title,
@@ -198,10 +198,10 @@ export default async function TownTypePage({ params }: PageProps) {
                     {type.name.toLowerCase()} escort services in Buckinghamshire. {town.description}
                   </p>
                   <p>
-                    Our {type.name.toLowerCase()} escorts serving {town.name} are available for both incall 
-                    and outcall appointments. Whether you&apos;re a local resident, visiting for business, or 
+                    We are an outcall-only agency – our {type.name.toLowerCase()} escorts travel directly to you 
+                    in {town.name}. Whether you&apos;re a local resident, visiting for business, or 
                     staying at one of the area&apos;s hotels such as {town.hotels}, our {type.name.toLowerCase()} companions 
-                    are ready to provide an exceptional experience.
+                    will come to your location for an exceptional experience.
                   </p>
                   <p>
                     {town.name} offers plenty of opportunities for dining and entertainment, including {town.attractions}. 
@@ -214,8 +214,8 @@ export default async function TownTypePage({ params }: PageProps) {
                       : town.region === 'South Buckinghamshire'
                       ? 'situated in the affluent South Buckinghamshire area'
                       : 'nestled in the beautiful Chiltern District'}, offering easy access to surrounding areas. 
-                    Our {type.name.toLowerCase()} escorts can travel throughout the region or host you at discreet 
-                    incall locations.
+                    Our {type.name.toLowerCase()} escorts travel throughout the region to meet you at your 
+                    home, hotel, or private venue – we are outcall only.
                   </p>
                 </div>
               </article>

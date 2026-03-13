@@ -18,8 +18,8 @@ export default function Footer() {
               <span className="text-white">Escorts</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Buckinghamshire&apos;s premier escort agency providing elite companionship 
-              services with discretion and professionalism throughout the county.
+              Buckinghamshire&apos;s premier outcall escort agency providing elite companionship 
+              services with discretion and professionalism throughout the county. We come to you.
             </p>
           </div>
 

@@ -21,15 +21,15 @@ const faqs = [
   },
   {
     question: "What areas do you cover?",
-    answer: "We cover all of Buckinghamshire including Milton Keynes, High Wycombe, Aylesbury, Amersham, Chesham, Beaconsfield, Marlow, and many more towns. Our escorts offer both incall and outcall services."
+    answer: "We cover all of Buckinghamshire including Milton Keynes, High Wycombe, Aylesbury, Amersham, Chesham, Beaconsfield, Marlow, and many more towns. We are an outcall-only agency – our escorts travel to you."
   },
   {
     question: "What are your rates?",
     answer: "Rates vary depending on the escort, duration, and services required. Contact us for accurate pricing. We're completely transparent — all costs are discussed upfront with no hidden fees."
   },
   {
-    question: "Do you offer incall and outcall?",
-    answer: "Yes, most of our escorts offer both options. Incall means visiting the escort at their private location. Outcall means the escort visits you at your home, hotel, or other suitable venue."
+    question: "Is this an outcall service?",
+    answer: "Yes, we are exclusively an outcall agency. Our escorts travel directly to your home, hotel, or other suitable private venue. We do not offer incall services – we come to you for maximum convenience and discretion."
   },
   {
     question: "How far in advance should I book?",

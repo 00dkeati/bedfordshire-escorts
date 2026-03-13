@@ -73,26 +73,20 @@ export default function LocationsPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="card-elegant text-center">
             <h2 className="text-3xl font-playfair font-bold text-white mb-4">
-              Full <span className="text-amber-400">Buckinghamshire Coverage</span>
+              <span className="text-amber-400">Outcall Only</span> – We Come To You
             </h2>
             <p className="text-gray-400 mb-6">
-              Our escorts provide both incall and outcall services throughout Buckinghamshire. 
-              If your area isn&apos;t listed, contact us — we likely have escorts available 
-              who can travel to you.
+              We are an exclusive outcall-only agency. Our escorts travel directly to your 
+              home, hotel, or private venue anywhere in Buckinghamshire. If your area isn&apos;t 
+              listed, contact us — we likely have escorts available who can travel to you.
             </p>
-            <div className="grid md:grid-cols-2 gap-6 mt-8 text-left">
-              <div>
-                <h3 className="text-amber-400 font-semibold mb-2">Incall Services</h3>
+            <div className="mt-8">
+              <div className="card-elegant bg-zinc-800/50">
+                <h3 className="text-amber-400 font-semibold mb-2">Outcall Service</h3>
                 <p className="text-gray-400 text-sm">
-                  Visit our escorts at their discreet, private locations across the county.
-                  Available in major towns including Milton Keynes, High Wycombe, and Aylesbury.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-amber-400 font-semibold mb-2">Outcall Services</h3>
-                <p className="text-gray-400 text-sm">
-                  Our escorts can visit you at your home, hotel, or other suitable venue
-                  anywhere in Buckinghamshire. Travel fees may apply for remote areas.
+                  Our escorts visit you at your home, hotel, or other suitable private venue
+                  anywhere in Buckinghamshire. Maximum convenience, complete discretion. 
+                  Travel fees may apply for remote areas.
                 </p>
               </div>
             </div>

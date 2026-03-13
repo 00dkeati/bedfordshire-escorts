@@ -121,9 +121,9 @@ export default async function TownPage({ params }: PageProps) {
               our {town.name} escorts are ready to provide unforgettable encounters.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              We offer both incall services at discreet private locations and outcall services 
-              to your home, hotel, or other suitable venue in {town.name} and the surrounding 
-              {town.region} area. Contact us today to book your perfect companion.
+              We are an outcall-only agency – our escorts travel directly to your home, hotel, 
+              or other suitable private venue in {town.name} and the surrounding {town.region} area. 
+              Contact us today to book your perfect companion.
             </p>
           </div>
         </div>

@@ -5,11 +5,11 @@ import { notFound } from "next/navigation";
 const towns: Record<string, { name: string; description: string; content: string }> = {
   "milton-keynes": {
     name: "Milton Keynes",
-    description: "Premier escort services in Milton Keynes, Buckinghamshire's largest city",
+    description: "Premier outcall escort services in Milton Keynes, Buckinghamshire's largest city",
     content: `Milton Keynes is the largest urban area in Buckinghamshire and home to many of our most sought-after escorts. 
     With its modern architecture, excellent hotels, and vibrant nightlife, MK is the perfect setting for an unforgettable encounter.
-    Our Milton Keynes escorts are available for both incall and outcall services throughout the city, including Central Milton Keynes, 
-    Bletchley, Wolverton, and surrounding areas.`
+    As an outcall-only agency, our Milton Keynes escorts travel directly to your home, hotel, or private venue throughout the city, 
+    including Central Milton Keynes, Bletchley, Wolverton, and surrounding areas.`
   },
   "high-wycombe": {
     name: "High Wycombe",
@@ -184,19 +184,13 @@ export default async function LocationPage({ params }: PageProps) {
           </div>
 
           {/* Services */}
-          <div className="mt-12 grid md:grid-cols-2 gap-6">
+          <div className="mt-12">
             <div className="card-elegant">
-              <h3 className="text-xl font-playfair font-semibold text-white mb-3">Incall Services</h3>
+              <h3 className="text-xl font-playfair font-semibold text-white mb-3">Outcall Only Service</h3>
               <p className="text-gray-400">
-                Visit our escorts at their discreet, comfortable locations in {town.name}.
-                All incall venues are private, clean, and welcoming.
-              </p>
-            </div>
-            <div className="card-elegant">
-              <h3 className="text-xl font-playfair font-semibold text-white mb-3">Outcall Services</h3>
-              <p className="text-gray-400">
-                Our {town.name} escorts can visit you at your home, hotel, or other suitable venue.
-                Outcall services available throughout the area.
+                We are an outcall-only agency – our {town.name} escorts travel directly to you at your home, 
+                hotel, or other suitable private venue. We come to you throughout {town.name} and the surrounding area, 
+                providing maximum convenience and discretion.
               </p>
             </div>
           </div>
