@@ -24,6 +24,33 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Bedfordshire Escorts Agency",
+  "description": "Premium outcall escort services across Bedfordshire including Bedford, Luton, Dunstable, and Leighton Buzzard.",
+  "url": "https://bedfordshireescorts.agency",
+  "telephone": "+447424783087",
+  "areaServed": [
+    { "@type": "City", "name": "Bedford" },
+    { "@type": "City", "name": "Luton" },
+    { "@type": "City", "name": "Dunstable" },
+    { "@type": "City", "name": "Leighton Buzzard" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Bedfordshire",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "priceRange": "£££"
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,6 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${playfair.variable} ${inter.variable} antialiased`}>
         <Header />
         <main>{children}</main>

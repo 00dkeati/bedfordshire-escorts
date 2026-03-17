@@ -602,6 +602,343 @@ The best preparation is mental: decide to relax and enjoy yourself. Our escorts 
 Contact us on WhatsApp when you're ready to book.`
     ],
     relatedGuides: ["first-time-booking-escort-bedfordshire", "escort-etiquette-guide", "best-hotels-bedford-escorts"]
+  },
+
+  "discreet-booking-tips": {
+    title: "Discreet Escort Booking Tips",
+    description: "How to book an escort with complete privacy. Tips for maintaining discretion before, during, and after your Bedfordshire escort experience.",
+    content: [
+      `## Complete Discretion Guide
+
+Privacy matters. Whether you're a professional, married, or simply value your personal life staying personal, this guide covers how to book and enjoy escort services with complete discretion.`,
+
+      `## Before Booking
+
+### Use Private Communication
+- **WhatsApp** – End-to-end encrypted, messages can be deleted
+- **Private browser** – Use incognito mode when browsing our site
+- **Separate email** – Consider a dedicated email for bookings if needed
+- **Clear history** – Delete browsing history after visiting escort sites`,
+
+      `## Payment Discretion
+
+### Cash is King
+- Cash leaves no paper trail
+- Withdraw over several days if needed
+- No "Escort Agency" on bank statements
+- Simple, anonymous, private`,
+
+      `## Location Choices
+
+### Hotels for Privacy
+Choose hotels wisely for maximum discretion:
+- **Chain hotels** – Staff see countless guests; you're anonymous
+- **24-hour reception** – No awkward questions about late visitors
+- **Separate entrance** – Some hotels have multiple entry points
+- **Room service** – Stay in your room; avoid restaurant encounters
+
+### At Home
+If hosting at home:
+- Ensure complete privacy (no family, housemates, neighbours observing)
+- Our escorts arrive looking like any normal visitor
+- No marked vehicles or obvious signs`,
+
+      `## During Your Booking
+
+### Communication
+- Your escort understands discretion
+- She won't share details with anyone
+- What happens stays between you
+
+### Phone Management
+- Silence your phone
+- Don't take calls during your booking
+- Focus on the experience`,
+
+      `## After Your Booking
+
+### No Digital Footprint
+- Delete any message threads if concerned
+- Don't leave reviews with identifying details
+- We never contact you unexpectedly
+
+### Our Commitment
+- We never share client information
+- No records kept beyond essential booking details
+- Your privacy is paramount`,
+
+      `## Common Concerns Addressed
+
+**Will anyone know?**
+Only if you tell them. We operate with complete confidentiality.
+
+**What about my phone bill?**
+WhatsApp uses internet data, not phone minutes – nothing appears on bills.
+
+**What if someone sees my escort arriving?**
+Our escorts dress elegantly but not provocatively. She could be a colleague, friend, or date – nothing unusual.
+
+**Do you keep records?**
+Only essential booking info, never shared, regularly purged.`,
+
+      `## Our Discretion Promise
+
+At Bedfordshire Escorts Agency, discretion isn't just a policy – it's fundamental to everything we do. Our reputation depends on protecting yours.
+
+Ready to book with confidence? Contact us on WhatsApp.`
+    ],
+    relatedGuides: ["first-time-booking-escort-bedfordshire", "preparing-for-escort-date", "outcall-explained"]
+  },
+
+  "choosing-right-escort": {
+    title: "How to Choose the Right Escort",
+    description: "Tips for selecting the perfect companion from our Bedfordshire escort gallery. What to consider and how to make the right choice for you.",
+    content: [
+      `## Finding Your Perfect Match
+
+With several stunning escorts to choose from, how do you pick the right one? This guide helps you make a choice you'll be delighted with.`,
+
+      `## What to Consider
+
+### Physical Preferences
+Think about what attracts you:
+- **Hair colour** – Blonde, brunette, black?
+- **Build** – Slim, curvy, petite?
+- **Height** – Tall, average, petite?
+- **Age** – Younger energy or mature sophistication?
+
+Browse our gallery with your preferences in mind, but stay open – sometimes the escort who catches your eye isn't who you expected.`,
+
+      `## Beyond Looks
+
+### Personality Matters
+Read profiles carefully:
+- **GFE specialists** – For affection and connection
+- **Party escorts** – High energy, fun, outgoing
+- **Sophisticated companions** – Dinner dates, social events
+- **Adventurous types** – Open to new experiences
+
+### Services Offered
+Different escorts offer different services:
+- **GFE** – The girlfriend experience
+- **Dinner dates** – Social companionship
+- **Overnight stays** – Extended encounters
+- **Domination** – For those who enjoy it
+- **Couples** – Available for duo bookings`,
+
+      `## Practical Considerations
+
+### Availability
+- Which areas does she cover?
+- Is she available when you want to book?
+- Can she travel to your location?
+
+### Your Experience Level
+- **First-timer?** – Consider escorts known for patience
+- **Specific fantasy?** – Choose someone who offers what you want
+- **Dinner date?** – Pick someone who loves social settings`,
+
+      `## Don't Overthink It
+
+Here's a secret: you can't really go wrong. All our escorts are:
+- Verified and genuine
+- Professional and discreet
+- Skilled at their work
+- Genuinely enjoyable company
+
+The "perfect" escort is the one you choose to spend time with.`,
+
+      `## Ask Us
+
+Not sure? Message us on WhatsApp and tell us:
+- What you're looking for
+- Any preferences you have
+- What kind of experience you want
+
+We know our escorts personally and can recommend the perfect match for your needs.`,
+
+      `## Try Different Companions
+
+Many clients have a regular favourite, but also enjoy meeting different escorts. Each brings something unique:
+- Different conversation
+- Different energy
+- Different experiences
+
+Variety is part of the pleasure.`
+    ],
+    relatedGuides: ["first-time-booking-escort-bedfordshire", "what-is-gfe-girlfriend-experience", "mature-escorts-guide"]
+  },
+
+  "dinner-date-guide": {
+    title: "Escort Dinner Date Guide",
+    description: "Everything you need to know about booking an escort for dinner in Bedfordshire. Restaurant tips, conversation starters, and making the most of your evening.",
+    content: [
+      `## The Perfect Dinner Date
+
+A dinner date with an escort combines fine dining with beautiful company. It's sophisticated, social, and sets the perfect tone for the evening ahead.`,
+
+      `## Why Book a Dinner Date?
+
+### The Benefits
+- **Social experience** – Enjoy conversation over food and wine
+- **Build connection** – Get comfortable together before private time
+- **Feel normal** – It's a genuine date, just without the games
+- **Public enjoyment** – Be seen with a stunning woman
+- **Extended pleasure** – More time with your companion`,
+
+      `## Restaurant Selection
+
+### What to Look For
+- **Quality cuisine** – Somewhere you'd be proud to take a date
+- **Good ambiance** – Not too loud, intimate enough for conversation
+- **Discreet seating** – Corner tables or booths
+- **Good service** – Attentive but not intrusive
+
+### Bedfordshire Recommendations
+**Bedford:**
+- The Embankment Hotel Restaurant – Riverside elegance
+- Ristorante Olivio – Italian fine dining
+- The Park Pub & Kitchen – Upscale gastropub
+
+**Luton:**
+- Forêt – Modern British
+- Spice Lounge – Upscale Indian
+- Hotel restaurants – Reliable quality`,
+
+      `## Making Conversation
+
+### Easy Topics
+- Travel – Where has she been? Where would she go?
+- Food – What does she enjoy eating?
+- Entertainment – Films, music, shows
+- Current events – Light, not controversial
+- Her interests – Ask and listen
+
+### Topics to Avoid
+- Her personal life details
+- Other clients
+- Anything too heavy for a date
+- Controversial politics or religion`,
+
+      `## Booking Tips
+
+### Duration
+- Minimum 2 hours for dinner + private time
+- 3 hours allows relaxed dining
+- Consider overnight for full evening experience
+
+### Logistics
+- You pay for the meal (obvious but worth stating)
+- Book the restaurant in advance
+- Choose somewhere convenient for afterwards
+- Let us know your restaurant choice when booking`,
+
+      `## What to Expect
+
+Your escort will:
+- Arrive looking stunning and date-appropriate
+- Be engaging, warm company
+- Enjoy genuine conversation
+- Make you feel like you're on a real date
+- Be discreet about the nature of your arrangement
+
+You should:
+- Dress appropriately for the venue
+- Be ready to lead conversation
+- Treat her as you would any date
+- Relax and enjoy the evening`,
+
+      `## After Dinner
+
+The evening naturally progresses to private time. Having shared dinner together:
+- You're both more relaxed
+- There's genuine connection
+- The anticipation has built
+- The transition feels natural
+
+It's the civilised way to enjoy escort companionship.
+
+Contact us on WhatsApp to book a dinner date in Bedfordshire.`
+    ],
+    relatedGuides: ["best-hotels-bedford-escorts", "best-hotels-luton-escorts", "escort-etiquette-guide"]
+  },
+
+  "booking-safely-guide": {
+    title: "How to Book an Escort Safely",
+    description: "Stay safe when booking escorts in Bedfordshire. How to identify legitimate agencies, avoid scams, and ensure a secure experience.",
+    content: [
+      `## Booking Escorts Safely
+
+Safety should always come first. This guide helps you navigate the escort industry safely, avoid common pitfalls, and ensure positive experiences.`,
+
+      `## Why Choose an Agency?
+
+### Agency Benefits
+- **Verified escorts** – We know our girls personally
+- **Genuine photos** – What you see is what you get
+- **Accountability** – We stand behind our service
+- **Support** – Someone to contact if issues arise
+- **Quality control** – Consistent standards maintained`,
+
+      `## Red Flags to Avoid
+
+### Signs of Scams
+- **Requests for deposits** via unusual methods (gift cards, crypto)
+- **Photos that look fake** or too professional (stock images)
+- **Prices too good to be true** – Quality costs money
+- **Pressure tactics** – "Book now or she's gone"
+- **Poor communication** – Can't answer basic questions
+- **No web presence** – Legitimate agencies have established sites`,
+
+      `## Our Safety Measures
+
+### What We Do
+- All escorts personally verified
+- Genuine, recent photos only
+- Clear pricing with no surprises
+- Professional communication
+- Complaints handled seriously
+- Your privacy protected`,
+
+      `## During Your Booking
+
+### Smart Practices
+- Meet in a safe location (hotel or your private home)
+- Have the agreed payment ready
+- Don't leave valuables lying around
+- Trust your instincts – if something feels wrong, it probably is
+- Keep our WhatsApp number handy`,
+
+      `## Personal Safety
+
+### Health Considerations
+- Escorts provide their own protection
+- Never pressure for unprotected services
+- Respect boundaries at all times
+- If you're unwell, postpone your booking`,
+
+      `## What to Do If Something Goes Wrong
+
+### Contact Us Immediately
+- If your escort doesn't arrive
+- If there's a significant problem
+- If expectations weren't met
+
+We take complaints seriously and resolve issues fairly.`,
+
+      `## The Bottom Line
+
+Booking through a reputable agency like Bedfordshire Escorts eliminates most risks. We:
+- Verify everyone we represent
+- Maintain professional standards
+- Handle problems quickly
+- Protect your privacy
+
+Stay safe, book smart, and enjoy your experience with confidence.
+
+Contact us on WhatsApp to book securely.`
+    ],
+    relatedGuides: ["first-time-booking-escort-bedfordshire", "discreet-booking-tips", "escort-etiquette-guide"]
   }
 };
 
@@ -614,6 +951,10 @@ const guidesList = [
   { slug: "outcall-explained", title: "Outcall Services Explained" },
   { slug: "mature-escorts-guide", title: "Why Choose a Mature Escort?" },
   { slug: "preparing-for-escort-date", title: "Preparing for Your Date" },
+  { slug: "discreet-booking-tips", title: "Discreet Booking Tips" },
+  { slug: "choosing-right-escort", title: "How to Choose the Right Escort" },
+  { slug: "dinner-date-guide", title: "Escort Dinner Date Guide" },
+  { slug: "booking-safely-guide", title: "How to Book Safely" },
 ];
 
 type PageProps = {
