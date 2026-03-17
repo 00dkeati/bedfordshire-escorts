@@ -4,16 +4,18 @@
 
 ### ✅ Done
 - [x] Sitemap submitted to Google Search Console
-- [x] 237 pages live with unique content
+- [x] 237 pages live with unique content → NOW 250+ with new guides
 - [x] WhatsApp CTA on all pages
 - [x] Mobile responsive
 - [x] Fast Next.js build
+- [x] Add robots.txt ✓
+- [x] Compress images to WebP ✓ (17 March 2026)
+- [x] LocalBusiness Schema markup added ✓ (17 March 2026)
+- [x] 4 new guides added ✓ (17 March 2026)
 
 ### 🔥 This Week
 - [ ] Request indexing for top 10 pages (below)
 - [ ] Submit to Bing Webmaster Tools
-- [ ] Add robots.txt
-- [ ] Compress images to WebP
 - [ ] Submit to 5 adult directories
 
 ---
